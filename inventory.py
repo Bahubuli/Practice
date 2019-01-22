@@ -19,4 +19,5 @@ def addin(smn,loot):
 			smn.setdefault(m,1)
 	print(smn)
 addin(samn,lot)
-	
+
+	#game inventory sample
