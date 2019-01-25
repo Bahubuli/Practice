@@ -10,4 +10,6 @@ def getpnr(m):
 		print(m)
 	
 for d in range(1,150):
-	getpnr(d)
+	getpnr(d
+
+               #dumb logic for prime no
