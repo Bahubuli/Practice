@@ -9,12 +9,11 @@ turn = 'X'
 for i in range(9):
 	printBoard(theBoard)
 	print('Turn for ' + turn + '. Move on which space?')
-	move = input()
+	move = int(input())
 	theBoard[move] = turn
+    if((theBoard['top-L']== theBoard[2] and theBoard[2]== theBoard[3]) and theBoard[1]== theBoard[1]
 	if turn == 'X':
 		turn = 'O'
 	else:
 		turn = 'X'
 printBoard(theBoard)
-	
-
