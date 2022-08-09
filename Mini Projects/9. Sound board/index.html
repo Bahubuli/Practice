@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Input Wave</title>
+    <title>Sound Board</title>
       <script type = "module" src="script.js"></script>
     <link rel = "stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,33 +12,14 @@
 </head>
 <body>
 
-    <div class = "container">
-
-        <h1>Please Login</h1>
-
-        <form>
-
-            <div class = "form-control">
-                <input type = "text" required>
-                <label>Email</label>
-            </div>
-
-            <div class = "form-control">
-                <input type = "password" required>
-                <label>Password</label>
-            </div>
-
-            <button class = "btn">Login</button>
-            <p class  ="Text">Don't have an account ?
-                <a href = "#">Register</a>
-            </p>
+    <audio id = "applause" src = "sounds/applause.mp3" ></audio>
+    <audio id = "boo" src = "sounds/boo.mp3" ></audio>
+    <audio id = "gasp" src = "sounds/gasp.mp3" ></audio>
+    <audio id = "victory" src = "sounds/victory.mp3" ></audio>
+    <audio id = "wrong" src = "sounds/wrong.mp3" ></audio>
+    <audio id = "tada" src = "sounds/tada.mp3" ></audio>
 
 
-        </form>
-
-
-    </div>
-
-
+    <div id = "buttons"></div>
 </body>
 </html>
