@@ -1,0 +1,155 @@
+
+*{
+    box-sizing:border-box;
+}
+
+
+:root
+{
+    --border-color:#144fc6;
+    --fill-color:#6ab3f8;
+}
+
+body
+{
+    background-color: #f3f3f3;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+
+}
+
+h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    display:flex;
+    width: 200px;
+    height:600px;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.color
+{
+    height:50px;
+    border-left: 5px solid;
+
+}
+
+.top
+{
+    background-color:#FF9933 ;
+}
+.mid
+{
+    background-color:#FFFFFF ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom
+{
+    background-color:#138808 ;
+}
+
+.pole
+{
+   height:450px;
+   width:5px;
+   background-color: black;
+
+}
+
+.base
+{
+    background-color:gray;
+    height:20px;
+    width: 200px;
+    position:absolute;
+    bottom: 0;
+    left:-90px;
+}
+
+
+.chakra
+{
+    height:50px;
+    width:50px;
+    border:1px solid #144fc6;
+    border-radius: 50px;
+    position:relative;
+    transition: 0.4s ease;
+
+}
+
+ .line
+{
+    height:100%;
+    width:1px;
+    display:inline-block;
+    position: absolute;
+    left:50%;
+    background-color: darkblue;
+}
+
+
+.line:nth-child(1)
+{
+    transform:rotate(15deg);
+}
+.line:nth-child(2)
+{
+    transform:rotate(30deg);
+}
+.line:nth-child(3)
+{
+    transform:rotate(45deg);
+}
+.line:nth-child(4)
+{
+    transform:rotate(60deg);
+}
+.line:nth-child(5)
+{
+    transform:rotate(75deg);
+}
+.line:nth-child(6)
+{
+    transform:rotate(90deg);
+}
+.line:nth-child(7)
+{
+    transform:rotate(105deg);
+}
+.line:nth-child(8)
+{
+    transform:rotate(120deg);
+   
+}
+.line:nth-child(9)
+{
+    transform:rotate(135deg);
+}
+.line:nth-child(10)
+{
+    transform:rotate(150deg);
+}
+.line:nth-child(11)
+{
+    transform:rotate(165deg);
+}
+.line:nth-child(12)
+{
+    transform:rotate(180deg);
+}
