@@ -1,0 +1,181 @@
+*
+{
+   box-sizing:border-box;
+}
+
+body
+{
+    margin:0;
+
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: #1f2937;
+    color:white;
+}
+
+.rheader
+{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero
+{
+    background-color: #1f2937;
+    display:flex;
+    justify-content: space-around;
+
+    color:white;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.hero-img
+{
+    width: 350px;
+    height: auto;
+    padding-top: 50px;
+}
+
+.hero-details
+{
+    width:400px
+}
+
+h2
+{
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+}
+.btn
+{
+    background-color: royalblue;
+    color:white;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:none;
+}
+
+.dish-list
+{
+    justify-content: center;
+    width: 100%;
+}
+.dish
+{
+    display: flex;
+    justify-content:space-around;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.chat-img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: 4px solid royalblue;
+}
+
+h2
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30px
+}
+
+.chat
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chat-details
+{
+    height: 150px;
+    width: 150px;
+}
+
+.testi
+{
+    font-size:35px;
+    color: #666;
+    font-style: italic;
+}
+
+.test-container
+{
+    background-color: antiquewhite;
+    padding:50px;
+    padding-left:300px;
+    padding-right:300px;
+
+}
+
+.test-text
+{
+    position:relative;
+}
+
+.cust-name
+{
+    right:50px;
+    bottom: 0;
+
+    display:inline;
+    position:absolute;
+}
+
+.cta-box
+{
+    width:800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:dodgerblue;
+    border-radius: 20px;
+}
+
+.cta-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+
+}
+
+.test
+{
+    width: 300px;
+}
+
+.cta-heading
+{
+    font-size:23px;
+    padding:0;
+    margin-bottom:0;
+    font-weight:800;
+}
+
+.cta-di
+{
+    padding-bottom: 15px;
+    margin:0;
+}
