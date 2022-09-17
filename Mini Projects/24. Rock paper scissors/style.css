@@ -1,0 +1,38 @@
+*{
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+
+body
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+    flex-direction: column;
+
+}
+
+
+.container
+{
+    height:300px;
+    width:800px;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+img
+{
+    height: 250px;
+    width:250px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
