@@ -1,0 +1,62 @@
+*{
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+
+body
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+
+}
+
+.container
+{
+    height: 700px;
+    width: 1000px;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-container
+{
+    height:600px;
+    width:200px;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.grid-container
+{
+    height:600px;
+    width:600px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(60,10px);
+    grid-template-rows: repeat(60,10px);
+}
+
+.box
+{
+    cursor:pointer;
+}
+
+button
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size:18px;
+    cursor: pointer;
+}
