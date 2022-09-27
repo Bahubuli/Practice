@@ -64,30 +64,50 @@ p
     cursor: pointer;
 }
 
-.add_sign
+
+.form-control input
 {
-    font-size:250px;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    height:250px;
-    width:300px;
-    border:3px dotted blueviolet;
-    cursor: pointer;
+    border:2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    padding:5px;
+    font-size:14px;
+    margin:0px;
 
 }
-.add_book
-{
 
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
+.form-control input:focus
+{
+   outline: none;
+   scale: 1.2;
+
 }
 
-.input_form
+form
 {
+    border: 2px dotted green;
     display:flex;
     flex-direction: column;
-    font-size:0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+h3
+{
+    margin:5px;
+    text-align: center;
+}
+
+.status
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:188px;
+}
+
+small
+{
+    margin-bottom: 0px;;
 }

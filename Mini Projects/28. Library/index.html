@@ -18,25 +18,40 @@
 
         <div class="shelf">
 
-            <div class = "add_book">
-
-                <form class ="input_form">
-                   <h3>Add new book</h3>
-
-                       <label for = "name">Name: </label>
-                       <input type = "text" id = "name" name = "name" placeholder= "enter title"/>
-
-                        <label for = "author">Author: </label>
-                       <input type = "text" id = "author" name = "author" placeholder= "enter author"/>
-
-                       <label for = "name">Name: </label>
-                       <input type = "text" id = "name" name = "name" placeholder= "enter title"/>
+            <form  class="form" id="form">
+                <h3>Add book </h3>
 
 
-                </form>
+                <div class = "form-control">
+
+                    <input type = "text" id = "bookname" placeholder = "Enter book name">
+                    
+                </div>
+
+                <div class = "form-control">
+
+                    <input type = "text" id = "authorname" placeholder = "Enter author name">
+
+                </div>
+
+                <div class = "form-control">
+
+                    <input type = "number" id = "pagecount" placeholder = "Enter number of pages">
+
+                </div>
+
+                <div class = "form-control status">
+                    <label for = "checkbox">Have you read</label>
+                    <input type = "checkbox" id = "checkbox" >
+                </div>
 
 
-            </div>
+                <button type = "submit">Submit</button>
+
+
+
+
+            </form>
 
         </div>
 

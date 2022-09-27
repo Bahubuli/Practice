@@ -74,25 +74,32 @@ resetLibrary();
 
 const read_status = document.querySelectorAll(".read_status");
 
-read_status.forEach((btn) => {
+read_status.forEach(btn => {
 
     btn.addEventListener("click", ()=>{
 
         btn.classList.remove("not_read");
         btn.classList.add("read");
         btn.textContent = "Read";
-        const idx = btn.datase
+
         btn.parentElement.status = "Read";
+
+        const idx = btn.dataset.idx;
+        const pos = myLibrary.findIndex(btn => btn.id == idx);
+
+        myLibrary[pos].status = "Read";
+
         console.log(myLibrary);
 
     })
  })
 
-const close = document.querySelectorAll(".close");
 
+let close = document.querySelectorAll(".close");
 close.forEach(btn => {
 
     btn.addEventListener("click", () => {
+
 
         // finding index of the object in the array
         // using data attribute
@@ -105,20 +112,98 @@ close.forEach(btn => {
  })
 
 
-const add_book = document.querySelector(".add_book");
-const input_form = document.querySelector(".input_form");
-add_book.addEventListener("click", () => {
-
-    const form = document.createElement("form");
-
-    // add_sign.style.height = "0px"
 
 
 
+const form = document.querySelector(".form");
+
+form.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const newbook = {
+        id: Math.random() * 500,
+         name: bookname.value,
+        Author: authorname.value,
+        Pages: pagecount.value,
+        status: checkbox.checked ? "Read" : "Not read"
+
+    }
+    myLibrary.push(newbook);
+
+    console.log(newbook);
+    const child = document.createElement("div");
+
+        child.innerHTML =`
+
+        <p class="name">${ newbook.name }</p>
+        <p class="author">${ newbook.Author }</p>
+        <p class="Page count">${ newbook.Pages }</p>
+        <button class="read_status not_read" data-idx = ${ newbook.id }>${ newbook.status }</button>
+        <button class = "close" data-idx = ${ newbook.id }>Close</button>
+
+    `
+        child.classList.add("book");
+        child.classList.add(`${newbook.id}`);
+
+    shelf.appendChild(child);
+    resetread();
+    resetclose();
+    clearform();
 })
 
-const allinputs = document.querySelectorAll("input_form");
+function resetread()
+{
+    const read_status = document.querySelectorAll(".read_status");
 
-allinputs.forEach(form => {
-    console.log(form);
+    read_status.forEach(btn => {
+
+    btn.addEventListener("click", ()=>{
+
+        btn.classList.remove("not_read");
+        btn.classList.add("read");
+        btn.textContent = "Read";
+
+        btn.parentElement.status = "Read";
+
+        const idx = btn.dataset.idx;
+        const pos = myLibrary.findIndex(btn => btn.id == idx);
+
+        myLibrary[pos].status = "Read";
+
+        console.log(myLibrary);
+
+    })
  })
+
+}
+
+function resetclose()
+{
+    let close = document.querySelectorAll(".close");
+close.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+
+        // finding index of the object in the array
+        // using data attribute
+        const idx = btn.dataset.idx;
+        const pos = myLibrary.findIndex(btn => btn.id === idx);
+        myLibrary.splice(pos, 1);
+        btn.parentElement.remove();
+
+     })
+ })
+
+
+}
+
+function clearform()
+{
+    const form = document.querySelector(".form");
+    bookname.value = '';
+    authorname.value = '';
+    pagecount.value = '';
+    checkbox.checked = false;
+}
