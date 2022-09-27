@@ -1,0 +1,93 @@
+*{
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+
+body
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+
+    margin:0;
+
+}
+
+.shelf
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:10px;
+}
+
+.book
+{
+    border:2px solid green;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:250px;
+    width:300px;
+    padding:20px;
+    border-radius: 20px;
+}
+
+p
+{
+    padding:0;
+    margin: 0;
+}
+
+.read_status.not_read
+{
+    width:150px;
+    height:40px;
+    background-color: yellow;
+    border:0;
+    font-size:30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.read_status.read
+{
+    width:120px;
+    height:40px;
+    background-color: greenyellow;
+    border:0;
+    font-size:30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add_sign
+{
+    font-size:250px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:250px;
+    width:300px;
+    border:3px dotted blueviolet;
+    cursor: pointer;
+
+}
+.add_book
+{
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input_form
+{
+    display:flex;
+    flex-direction: column;
+    font-size:0;
+}
