@@ -6,10 +6,9 @@ export default function Contact() {
     const queryString = useLocation().search;
     console.log(queryString);
 
-
     const queryParams = new URLSearchParams(queryString);
     const name = queryParams.get("name");
-
+//
 
   return (
       <div>
