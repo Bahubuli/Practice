@@ -1,0 +1,56 @@
+*{
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+
+body
+{
+
+    background: #2f3542 url('img/bg.jpg') no-repeat left;
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+    text-align: center;
+}
+
+h1, h3
+{
+    margin-bottom: 0;
+}
+
+p
+{
+    line-height:1.5;
+    margin:0;
+}
+
+.play-again
+{
+    padding: 8px 15px;
+    border:0;
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: black;
+}
+
+.msg
+{
+    font-size:1.5em;
+    margin-top:40px;
+}
+
+.box
+{
+    border: 1px solid #dedede;
+    display:inline-block;
+    font-size:30px;
+    margin:20px;
+    padding:10px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> .... </title>
+    <title> Speed Typer </title>
       <script type = "module" src="script.js"></script>
     <link rel = "stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +12,41 @@
 </head>
 <body>
 
-  
+    <button id="settings-btn" class="settings-btn">
+        <i class="fas fa-cog"></i>
+    </button>
 
+    <div id="settings" class="settings">
+        <form id = "settings-form">
+
+            <div>
+                <label for = "difficulty">Difficulty</label>
+                <select name="" id="difficulty">
+                    <option value = "Easy">Easy</option>
+                    <option value = "Medium">Medium</option>
+                    <option value = "Hard">Hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Speed Typer</h2>
+        <small>Type the following:</small>
+        <h1 id = "word"></h1>
+        <input type = "text" id = "text" autocomplete = "off" placeholder = "type the word here...">
+
+        <p class = "time-container">
+            Time Left: <span id = "time">10s</span>
+        </p>
+
+        <p class = "score-container">
+            Score: <span id = "score">0</span>
+        </p>
+
+        <div id="end-game-container" class="end-game-container">
+
+        </div>
+    </div>
 </body>
 </html>
