@@ -8,8 +8,6 @@ import Search from './Pages/search/Search'
 import Recipe from './Pages/recipe/Recipe'
 
 //styles
-
-
 import './App.css'
 
 function App() {
