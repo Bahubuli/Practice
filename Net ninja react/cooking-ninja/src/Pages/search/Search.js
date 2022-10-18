@@ -2,26 +2,25 @@ import React from 'react'
 import './Search.css'
 
 import {useState} from 'react';
-import { useHistory } from 'react-router-dom';
-
+import { useFetch } from '../../Hooks/useFetch';
+import { useLocation } from 'react-router-dom';
+import RecipeList from '../../components/RecipeList';
 export default function Searchbar() {
 
-    const [term,setTerm] = useState("");
-    const history = useHistory();
+    const queryString = useLocation().search;
+    const queryParams = new URLSearchParams(queryString);
+    const query = queryParams.get('query');
+    const url = 'http://localhost:3000/recipes?q='+query;
 
-    const handleSubmit = (e)=>{
-        e.preventDefault();
-        history.push(`/search?query = ${term}`)
-    }
+    const {error, isPending,data} = useFetch(url);
 
-  return (
-    <div className = "searchBar">
-        <form onSubmit = {handleSubmit}>
-            <label htmlFor  ="search">Search</label>
-            <input type = "text"
-            id = "search"
-            onChange = { (e)=> setTerm(e.target.value)} />
-        </form>
-    </div>
-  )
+    return (
+        <div>
+            <h2 className = "page-title">Recipes including "{query}"</h2>
+            {error && <p className = "error">{error}</p>}
+            {isPending && <p className = "loading">Loading...</p>}
+            {data && <RecipeList recipes = {data}/>}
+        </div>
+    )
+
 }

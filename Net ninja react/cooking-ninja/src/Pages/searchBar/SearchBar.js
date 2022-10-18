@@ -1,17 +1,17 @@
 import React from 'react'
-import './Search.css'
+import './SearchBar.css'
 
 import {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 
-export default function Searchbar() {
+export default function SearchBar() {
 
     const [term,setTerm] = useState("");
     const history = useHistory();
 
     const handleSubmit = (e)=>{
         e.preventDefault();
-        history.push(`/search?query = ${term}`)
+        history.push(`/search?query=${term}`)
     }
 
   return (
