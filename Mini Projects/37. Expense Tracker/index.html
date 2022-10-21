@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Expense Tracker </title>
-      <script type = "module" src="script.js"></script>
+
     <link rel = "stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -16,22 +16,22 @@
 
     <div class = "container">
         <h4>Your Balance</h4>
-        <h1 id = "balance">$0.00</h1>
+        <h1 id = "balance">₹0.00</h1>
 
         <div class = "inc-exp-container">
             <div>
                 <h4>Income</h4>
-                <p id = "money-plus" class = "money plus">+$0.00</p>
+                <p id = "money-plus" class = "money plus">+₹0.00</p>
             </div>
             <div>
                 <h4>Expense</h4>
-                <p id = "money-minus" class = "money minus">+$0.00</p>
+                <p id = "money-minus" class = "money minus">+₹0.00</p>
             </div>
         </div>
 
         <h3>History</h3>
         <ul id = "list" class = "list">
-            <li  class = "minus"><span>-$400</span><button class = "delete-btn">x</button></li>
+
         </ul>
 
         <h3>Add new transaction</h3>
@@ -43,18 +43,14 @@
             </div>
 
             <div class = "form-control">
-                <label for = "text">Amount <br> (negative - expense, positive-income)</label>
-                <input type = "text" id = "amount" placeholder = "Enter text...">
+                <label for = "amount">Amount <br> (negative - expense, positive-income)</label>
+                <input type = "number" id = "amount" placeholder = "Enter text...">
             </div>
-            <button class="btn" id = "btn">Add transaction</button>
+            <button class="btn">Add transaction</button>
         </form>
 
     </div>
 
-
-
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
