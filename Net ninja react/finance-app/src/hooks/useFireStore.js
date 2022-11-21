@@ -71,3 +71,6 @@ const firestoreReducer = (state, action) => {
     return { addDocument, deleteDocument, response }
 
   }
+
+
+ 

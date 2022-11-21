@@ -14,4 +14,4 @@ ReactDOM.render(
     </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
