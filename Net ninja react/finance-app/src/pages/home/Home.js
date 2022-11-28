@@ -1,5 +1,6 @@
 import { useAuthContext } from '../../hooks/useAuthContext'
 import { useCollection } from '../../hooks/useCollection';
+import DisplayBalance from './DisplayBalance';
 // styles
 import styles from './Home.module.css'
 
@@ -20,6 +21,7 @@ export default function Home() {
     <div className = {styles.container}>
         <div className = {styles.content}>
             {error && <p>{error}</p>}
+            {documents && <DisplayBalance transactions = {documents}/>}
             {documents && <TransactionList transactions = {documents}/>}
         </div>
 
