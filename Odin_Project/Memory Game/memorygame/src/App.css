@@ -1,3 +1,5 @@
+
+
 body
 {
     background-color:wheat;
@@ -49,4 +51,32 @@ img
     align-items: center;
     justify-content: space-around;
     width:400px;
+}
+
+@media screen and (max-width:800px) {
+
+    .board
+    {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+
+        max-height:525px;
+        overflow:hidden;
+        gap:20px;
+
+    }
+
+    .char
+    {
+        height:110px;
+        width:100px;
+        border-radius: 10px;
+    }
+
+    img
+    {
+        height:100px;
+        width:100px;
+        border-radius: 5px;
+    }
 }
