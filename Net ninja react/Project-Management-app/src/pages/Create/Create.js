@@ -4,7 +4,7 @@ import {useFireStore} from '../../hooks/useFireStore'
 import {useEffect, useState} from 'react'
 import Select from 'react-select';
 import { useCollection } from '../../hooks/useCollection';
-import { useHistory } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import { useAuthContext } from '../../hooks/useAuthContext';
 
 import { timestamp } from '../../firebase/config';
@@ -29,7 +29,7 @@ export default function Create() {
     const [formError,setFormError] = useState(null);
 
     const {user} = useAuthContext();
-    const history = useHistory();
+    const navigate = useNavigate();
     const {addDocument, response} = useFireStore("projects");
 
     // getting user data from collection hook
@@ -97,7 +97,7 @@ export default function Create() {
         await addDocument(project);
         if(!response.error)
         {
-            history.push('/');
+            navigate('/');
         }
 
         console.log(project);

@@ -1,6 +1,6 @@
 import './App.css'
 
-import {BrowserRouter, Route,Switch,Redirect} from 'react-router-dom';
+import {BrowserRouter, Route,Routes,Navigate} from 'react-router-dom';
 import { useAuthContext } from './hooks/useAuthContext';
 // pages and components
 
@@ -27,34 +27,28 @@ function App() {
             <div className = "container">
                     <Navbar/>
 
-                <Switch>
-                    <Route exact path = "/">
-                        {!user && <Redirect to = "/login" />}
-                        {user && <Dashboard/>}
+                <Routes>
+                    <Route  path = "/"
+                    element = { user ? <Dashboard/> : <Navigate to = "/login"/>}
+                    />
 
-                    </Route>
+                    <Route  path = "/create"
+                     element = {user ? <Create/> :<Navigate to ="/login"/>}
+                    />
 
-                    <Route exact path = "/create">
-                    {!user && <Redirect to = "/login" />}
-                     {user &&  <Create/> }
-                    </Route>
+                    <Route  path = "/login"
+                        element = {user ? <Navigate to="/"/>:<Login/>}
+                    />
 
-                    <Route exact path = "/login">
-                        {user && <Redirect to ="/"/>}
-                        {!user && <Login/>}
-                    </Route>
+                    <Route path = "/signup"
+                     element = {user ? <Navigate to ="/"/> :<Signup/>}
+                    />
 
-                    <Route exact path = "/signup">
-                    {user && <Redirect to ="/"/>}
-                       {!user &&  <Signup/>}
-                    </Route>
+                    <Route  path = "/projects/:id"
+                    element = {user ? <Project/> :<Navigate to = "/login" />}
+                    />
 
-                    <Route exact path = "/projects/:id">
-                    {!user && <Redirect to = "/login" />}
-                     {user && <Project/> }
-                    </Route>
-
-                </Switch>
+                </Routes>
 
 
 
