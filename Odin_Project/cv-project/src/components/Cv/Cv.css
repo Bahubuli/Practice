@@ -1,0 +1,119 @@
+
+.Cv
+{
+    border:2px solid black;
+    height:1000px;
+    width:800px;
+    margin:80px;
+    position:relative;
+}
+
+.Title-box
+{
+    background-color: rgb(20,62,114);
+    color:aliceblue;
+    height:130px;
+    padding:0px;
+}
+
+.Name
+{
+    margin:0px;
+    font-size:45px;
+    font-weight: 600;
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.Title
+{
+    margin:0px;
+    font-size:20px;
+    padding-left:20px;
+
+}
+
+.info-container
+{
+    display: flex;
+    height:auto;
+}
+
+.left-container
+{
+    border:2px solid black;
+    height:auto;
+    width:550px;
+}
+
+.right-container
+{
+    border:2px solid blue;
+    background-color:rgb(221,221,221);
+    height:100%;
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp
+{
+    height:250px;
+    width:180px;
+    border:2px solid gray;
+}
+
+h3
+{
+    padding:0;
+}
+
+span
+{
+    font-size:18px;
+    font-weight: 600;
+}
+p
+{
+    margin:0;
+    padding:0;
+}
+
+.personal-details p
+{
+    margin-bottom: 10px;
+}
+
+
+.exp-container
+{
+    display: flex;
+    width:450px;
+    justify-content: space-between;
+}
+
+.exp-div
+{
+    display: flex;
+    justify-content: space-around;
+    width:200px;
+}
+
+.company-div
+{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+}
+
+.company-name
+{
+    font-weight: 600;
+}
+
+.Experience:first-child 
+{
+    font-weight: 800;
+}
