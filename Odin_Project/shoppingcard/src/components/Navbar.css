@@ -1,0 +1,19 @@
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(234,153,55);
+}
+
+.logo-img
+{
+    height:auto;
+    width:200px;
+}
+
+.cart-img
+{
+    height:50px;
+    width:50px;
+}
