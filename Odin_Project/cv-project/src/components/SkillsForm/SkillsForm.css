@@ -1,0 +1,34 @@
+.Skills
+{
+    border:2px solid black;
+    box-shadow:  5px 5px 30px  green;
+    border-radius: 20px;
+    width: 600px;
+    padding:40px;
+    position:relative;
+}
+
+.Skills h2
+{
+    margin-top: 0px;
+}
+
+.Skills p
+{
+    border:1px solid grey;
+    border-radius: 5px;
+    padding:3px;
+    margin:3px;
+    display:inline;
+    cursor: pointer;
+
+}
+
+.skillsList
+{
+
+    width:300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+}

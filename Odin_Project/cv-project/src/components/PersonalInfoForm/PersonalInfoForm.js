@@ -10,10 +10,17 @@ export default function PersonalInfoForm({setPersonalInfo}) {
     const [phone,setPhone] = useState('');
     const [description,setDescription] = useState('');
     const [address,setAddress] = useState('');
-
+    const [photo,setPhoto] = useState(null)
     const printProfile = (e)=>{
         e.preventDefault();
-        setPersonalInfo({name,title,email,phone,description,address})
+        setPersonalInfo({name,title,email,phone,description,address,photo})
+    }
+
+    const handleFileChange = (e)=>{
+        let selected = e.target.files[0];
+
+        const url = URL.createObjectURL(selected);
+        setPhoto(url);
     }
 
   return (
@@ -51,15 +58,20 @@ export default function PersonalInfoForm({setPersonalInfo}) {
                 required/>
             </label>
             <label>
-
                 <input type = "text"
                 onChange = {(e)=>setPhone(e.target.value)}
                 value = {phone}
                 placeholder = "Phone"
                 required/>
             </label>
+            <label className = "file-input">
+                <input type = "file"
+                name = "Photo"
+                onChange = {handleFileChange}
+                required/>
+            </label>
             <label className = "description">
-                <input type = "text"
+                <textarea type = "text"
                 onChange = {(e)=>setDescription(e.target.value)}
                 value = {description}
                 placeholder = "Description"

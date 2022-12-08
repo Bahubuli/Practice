@@ -1,21 +1,9 @@
 import React from 'react'
 import './Cv.css'
 import mario from './mario.png'
-export default function Cv({exp,edu,personalInfo}) {
+export default function Cv({expList,eduList,personalInfo,skills}) {
 
-
-    const expList = [
-                    {from:"from",to:"to",company:"company",
-                     position:"position"   },
-                   exp
-                ]
-
-    const eduList = [
-                    {institute:"Institute",city:"City",
-                    degree:"Degree",subject:"Subject",
-                    from:"From",to:"To"},
-                   edu
-                  ]
+    console.log(skills,"fuck that");
   return (
     <div className = "Cv">
 
@@ -62,6 +50,15 @@ export default function Cv({exp,edu,personalInfo}) {
                            </div>
                         </div>
                     ))}
+                </div>
+
+                <div className="SkillSet">
+                    <h3>Skills<hr></hr></h3>
+                    <ul>
+                    {skills.map((skill,index)=>(
+                        <li key = {index}>{skill}</li>
+                    ))}
+                    </ul>
                 </div>
 
             </div>

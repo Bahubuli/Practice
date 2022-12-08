@@ -1,11 +1,10 @@
-
 .Cv
 {
-    border:2px solid black;
-    height:1000px;
+    height:auto;
     width:800px;
     margin:80px;
-    position:relative;
+    border:4px solid black;
+    border-radius: 10px;
 }
 
 .Title-box
@@ -14,6 +13,8 @@
     color:aliceblue;
     height:130px;
     padding:0px;
+    border-radius: 3px;
+    margin: 0;
 }
 
 .Name
@@ -35,34 +36,37 @@
 
 .info-container
 {
+
     display: flex;
-    height:auto;
+    justify-content: space-between;
+    height:900px;
 }
 
 .left-container
 {
-    border:2px solid black;
     height:auto;
     width:550px;
+    padding:20px;
 }
 
 .right-container
 {
-    border:2px solid blue;
+    box-sizing: border-box;
     background-color:rgb(221,221,221);
-    height:100%;
-    width:250px;
+    width:220px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding:10px;
+
 }
 
 .dp
 {
-    height:250px;
-    width:180px;
-    border:2px solid gray;
+    height:200px;
+    width:150px;
+
 }
 
 h3
@@ -113,7 +117,7 @@ p
     font-weight: 600;
 }
 
-.Experience:first-child 
+.Experience:first-child
 {
     font-weight: 800;
 }

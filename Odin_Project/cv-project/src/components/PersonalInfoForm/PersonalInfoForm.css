@@ -4,10 +4,17 @@
 .personal-info
 {
     border:2px solid black;
-   
+    border-radius: 20px;
+    box-shadow:  5px 5px 30px  green;
+
 }
 
 .description input
 {
     height:100px;
+}
+
+.file-input
+{
+    border:1px solid black;
 }
