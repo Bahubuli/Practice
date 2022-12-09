@@ -33,8 +33,10 @@ export default function SkillsForm({setSkills}) {
   return (
     <div className = "Skills">
         <h2>Enter your skills here</h2>
+        <span>Tap on skill to remove</span>
         <label>
-        <span>Enter your Skills</span>
+        <h3>Enter you Skills</h3>
+
             <input type = "text"
             value = {skill}
             onChange = {handleChange}
@@ -47,6 +49,7 @@ export default function SkillsForm({setSkills}) {
                 )
             })}
         </div>
+
     </div>
   )
 }

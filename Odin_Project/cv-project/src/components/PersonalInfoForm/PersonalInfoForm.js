@@ -68,6 +68,7 @@ export default function PersonalInfoForm({setPersonalInfo}) {
                 <input type = "file"
                 name = "Photo"
                 onChange = {handleFileChange}
+                placeholder = "photo"
                 required/>
             </label>
             <label className = "description">

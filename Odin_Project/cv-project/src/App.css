@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     gap:50px;
+    position: relative;
 }
 
 form
@@ -35,6 +36,7 @@ button
     font-size:18px;
     color:aliceblue;
     margin: 5px;
+    cursor: pointer;
 }
 
 input[type='file'] {
@@ -57,4 +59,15 @@ hr
 {
     margin: 2px;
     border:1px solid #7777;
+}
+
+.btn
+{
+    position: absolute;
+    bottom:20px;
+    width:150px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    color:black;
+    margin-top: 100px;
 }

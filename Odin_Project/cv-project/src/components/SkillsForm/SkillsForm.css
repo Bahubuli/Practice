@@ -6,6 +6,7 @@
     width: 600px;
     padding:40px;
     position:relative;
+    height:auto;
 }
 
 .Skills h2
@@ -31,4 +32,16 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 120px;
+}
+
+
+h3
+{
+    padding:0;
+    margin: 0;
+}
+
+.Skills span
+{
+    margin-left: 230px;
 }

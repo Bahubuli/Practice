@@ -1,11 +1,12 @@
 import React from 'react'
 import './Cv.css'
 import mario from './mario.png'
-export default function Cv({expList,eduList,personalInfo,skills}) {
+import {forwardRef} from 'react';
 
-    console.log(skills,"fuck that");
-  return (
-    <div className = "Cv">
+const  Cv = forwardRef(({expList,eduList,personalInfo,skills},ref)=> (
+
+
+    <div className = "Cv" ref = {ref}>
 
         <div className = "Title-box">
             <p className = "Name">{personalInfo.name}</p>
@@ -76,5 +77,6 @@ export default function Cv({expList,eduList,personalInfo,skills}) {
             </div>
         </div>
     </div>
-  )
-}
+  ));
+
+export default Cv

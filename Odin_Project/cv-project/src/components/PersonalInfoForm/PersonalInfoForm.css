@@ -17,4 +17,12 @@
 .file-input
 {
     border:1px solid black;
+
+}
+
+.file-input::before{
+    content:"Photo";
+    font-size:20px;
+    margin-left:5px;
+    color:#555;
 }

@@ -29,8 +29,8 @@ export default function ExperienceForm({setExpList}) {
         setInputFields([...inputFields.splice(index,1)]);
 
         console.log(inputFields);
-        setExpList([{from:"from",to:"to",company:"company",
-        position:"position"   },...inputFields]);
+        setExpList([{from:"From",to:"To",company:"Company",
+        position:"Position"   },...inputFields]);
 
     }
 
@@ -38,8 +38,8 @@ export default function ExperienceForm({setExpList}) {
         let data = [...inputFields];
         data[index][event.target.name] = event.target.value;
         setInputFields(data);
-        setExpList([{from:"from",to:"to",company:"company",
-        position:"position"   },...inputFields]);
+        setExpList([{from:"From",to:"To",company:"Company",
+        position:"Position"   },...inputFields]);
     }
 
   return (
